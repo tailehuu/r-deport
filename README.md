@@ -14,15 +14,21 @@ Web-based shopping cart application
     git push -u origin master
 
 ### Generate scaffolding
+
     # product
     rails generate scaffold product title:string description:text image_url:string price:decimal
+
     # apply product's migration
     rake db:migrate
+
     # test
     rake test
+    
     # unit test
     rake test:units
+    
     # create seed data, db/seed.rb
     rake db:seed
+    
     # db rollback
     rake db:rollback
